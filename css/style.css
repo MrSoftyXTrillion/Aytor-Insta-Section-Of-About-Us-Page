@@ -1,0 +1,103 @@
+/* !COMMON CSS STARTS HERE====================================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Roboto&display=swap');
+:root {
+    --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--primaryFont);
+    background-color: rgb(255, 255, 255);
+}
+h1,h2,h3,h4,h5,h6,span,paragraph,ol,ul {
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* !COMMON CSS ENDS HERE======================================================================================== */
+
+/* &AYTOR INSTAGRAM INFO STARTS HERE */
+#instaAytor h2 {
+    color: var(--text-color, #11161E);
+    font-family: Josefin Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+}
+#instaAytor .mainCard .card {
+    display: inline-block;
+    border: none;
+    padding: 0 5px;
+}
+#instaAytor .mainCard .card .cardInner {
+    display: inline-block;
+    border-radius: 0;
+    height: 200px;
+    position: relative;
+}
+#instaAytor .mainCard .card .cardInner:hover img {
+    opacity: 1;
+}
+#instaAytor .mainCard .card .cardInner img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.2s ease;
+}
+#instaAytor .mainCard .card .cardInner span {
+    position: absolute;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 89%;
+    height: 100%;
+    line-height: 200px;
+    font-size: 30px;
+    z-index: 1;
+    color: #FF6F61;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+#instaAytor .mainCard .card .cardInner:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+#instaAytor .mainCard ul {
+    text-align: center;
+}
+#instaAytor .mainCard ul li {
+    display: inline-block;
+    margin: 20px 10px;
+}
+#instaAytor .mainCard ul li button {
+    width: 20px;
+    height: 10px;
+    color: transparent;
+    background-color: #BDBDBD;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+#instaAytor .mainCard ul li.slick-active button {
+    background-color: #FF6F61;
+    width: 50px;
+}
+#instaAytor .mainCard.md ul li,
+#instaAytor .mainCard.sm ul li,
+#instaAytor .mainCard.esm ul li {
+    display: none;
+}
+/* &AYTOR INSTAGRAM INFO ENDS HERE */
